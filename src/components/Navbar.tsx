@@ -12,31 +12,38 @@ import ITLogo from "../assets/img/it.png";
 
 class Navbar extends React.Component {
   render() {
-    return(
-      <nav className="z-50 h-screen py-12 fixed flex items-center justify-between nav-bg flex-col" style={{width: "76px"}}>
-        <img src={ITLogo} alt="" width="50" height="50" />
-        <div className="flex flex-col">
-          <NavBtn className="my-4">
-              <ClassSvg />
+    return (
+      <nav className="nav-bg z-50 lg:h-screen md:h-16 lg:py-12 lg:fixed sm:flex sm:items-center lg:px-0 lg:w-16 sm:justify-between lg:flex-col sm:px-8 md:px-16">
+        <div className="flex justify-center">
+          <img
+            src={ITLogo}
+            alt=""
+            style={{ width: 50, height: 50 }}
+            className="inline-block"
+          />
+        </div>
+        <div className="flex py-3 lg:flex-col justify-around">
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4">
+            <ClassSvg />
           </NavBtn>
-          <NavBtn className="my-4" location="/home">
-              <HomeSvg />
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/home">
+            <HomeSvg />
           </NavBtn>
-          <NavBtn className="my-4" location="/info">
-              <InfoSvg />
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/info">
+            <InfoSvg />
           </NavBtn>
-          <NavBtn className="my-4" location="/division">
-              <DivisionSvg />
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/division">
+            <DivisionSvg />
           </NavBtn>
-          <NavBtn className="my-4" location="/members">
-              <PeopleSvg />
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/members">
+            <PeopleSvg />
           </NavBtn>
-          <NavBtn className="my-4" location="/contact">
-              <ContactSvg />
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/contact">
+            <ContactSvg />
           </NavBtn>
         </div>
       </nav>
-    )
+    );
   }
 }
 
