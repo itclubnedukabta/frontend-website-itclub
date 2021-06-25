@@ -33,7 +33,7 @@ class Navbar extends React.Component {
           <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/">
             <HomeSvg />
           </NavBtn>
-          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/info">
+          <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/about">
             <InfoSvg />
           </NavBtn>
           <NavBtn className="lg:my-4 lg:mx-0 sm:mx-4" location="/division">
