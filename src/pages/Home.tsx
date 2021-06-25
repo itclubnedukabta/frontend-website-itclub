@@ -5,7 +5,7 @@ class Home extends React.Component {
   render() {
     return (
       <div
-        className="h-screen pt-3 sm:pt-0 pl-0 sm:pl-16 flex flex-col justify-center"
+        className="h-screen w-screen pt-3 sm:pt-0 pl-0 sm:pl-16 flex flex-col justify-center"
         style={{
           backgroundImage: "linear-gradient(to right, #01B1D6, #0178B7)",
         }}
