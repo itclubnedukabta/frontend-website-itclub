@@ -39,13 +39,28 @@ class About extends React.Component {
           </p>
           <div className="pt-10 h-4/6">
             <div className="inline-block w-4/12 h-full bg-gray-600">
-              <img src={Image1.default} alt="" className="w-full h-full" />
+              <img
+                src={Image1.default}
+                alt=""
+                className="w-full h-full"
+                loading="lazy"
+              />
             </div>
             <div className="inline-block w-4/12 h-full bg-gray-700">
-              <img src={Image2.default} alt="" className="w-full h-full" />
+              <img
+                src={Image2.default}
+                alt=""
+                className="w-full h-full"
+                loading="lazy"
+              />
             </div>
             <div className="inline-block w-4/12 h-full bg-gray-800">
-              <img src={Image3.default} alt="" className="w-full h-full" />
+              <img
+                src={Image3.default}
+                alt=""
+                className="w-full h-full"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
