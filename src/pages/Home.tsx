@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../Tailwind.css";
 
 class Home extends React.Component {
@@ -10,6 +11,9 @@ class Home extends React.Component {
           backgroundImage: "linear-gradient(to right, #01B1D6, #0178B7)",
         }}
       >
+        <Helmet>
+          <title>Home | IT Club Nedukabta</title>
+        </Helmet>
         <div className="pl-20">
           <h1 className="text-8xl font-bold" style={{ color: "#ADE8F4" }}>
             IT Club

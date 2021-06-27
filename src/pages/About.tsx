@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../Tailwind.css";
 const Image1 = require("../assets/img/About1.png");
 const Image2 = require("../assets/img/About2.png");
@@ -8,7 +9,10 @@ class About extends React.Component {
   render() {
     return (
       <div className="h-screen w-screen pt-3 sm:pt-0 pl-0 sm:pl-16">
-        <div className="pt-40 pl-24 w-11/12 h-full">
+        <Helmet>
+          <title>About | IT Club Nedukabta</title>
+        </Helmet>
+        <div className="pt-20 pl-24 w-11/12 h-full">
           <h1
             className="text-4xl font-bold"
             style={{
