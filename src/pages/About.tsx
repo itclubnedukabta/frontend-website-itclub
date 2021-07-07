@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Container from "../components/Container";
 import "../Tailwind.css";
 const Image1 = require("../assets/img/About1.png");
 const Image2 = require("../assets/img/About2.png");
@@ -8,7 +9,7 @@ const Image3 = require("../assets/img/About3.png");
 class About extends React.Component {
   render() {
     return (
-      <div className="h-screen w-screen pt-3 sm:pt-0 pl-0 sm:pl-16">
+      <Container>
         <Helmet>
           <title>About | IT Club Nedukabta</title>
         </Helmet>
@@ -68,7 +69,7 @@ class About extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     );
   }
 }

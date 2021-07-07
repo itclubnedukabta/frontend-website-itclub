@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Division from "./pages/Division";
+import Member from "./pages/Member";
 class App extends React.Component {
   render() {
     return (
@@ -19,7 +20,9 @@ class App extends React.Component {
           <Route exact path="/division">
             <Division />
           </Route>
-          <Route exact path="/members"></Route>
+          <Route exact path="/members">
+            <Member />
+          </Route>
           <Route exact path="/contact"></Route>
         </Switch>
       </Router>

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import "../Tailwind.css";
 
 import DivCard from "../components/DivCard";
+import Container from "../components/Container";
 
 const NetworkImage = require("../assets/img/networking.png");
 const ProgrammingImage = require("../assets/img/programming.png");
@@ -11,8 +12,8 @@ const GraphicImage = require("../assets/img/graphic.png");
 class Division extends React.Component {
   render() {
     return (
-      <div
-        className="h-screen w-screen pt-3 sm:pt-0 pl-0 sm:pl-16 flex items-center"
+      <Container
+        className="flex items-center"
         style={{
           color: "#023E8A",
         }}
@@ -28,7 +29,7 @@ class Division extends React.Component {
             <DivCard image={GraphicImage.default} name="Graphic Design" />
           </div>
         </div>
-      </div>
+      </Container>
     );
   }
 }
