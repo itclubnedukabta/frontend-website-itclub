@@ -13,17 +13,17 @@ class Division extends React.Component {
   render() {
     return (
       <Container
-        className="flex items-center"
+        className="lg:flex lg:items-center"
         style={{
           color: "#023E8A",
         }}
       >
-        <div className="px-36 w-full">
+        <div className="lg:px-36 w-full">
           <Helmet>
             <title>Division | IT Club Nedukabta</title>
           </Helmet>
           <h3 className="text-3xl font-bold text-center pb-6">Division</h3>
-          <div className="flex">
+          <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center">
             <DivCard image={NetworkImage.default} name="Networking" />
             <DivCard image={ProgrammingImage.default} name="Programming" />
             <DivCard image={GraphicImage.default} name="Graphic Design" />

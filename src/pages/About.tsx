@@ -13,9 +13,9 @@ class About extends React.Component {
         <Helmet>
           <title>About | IT Club Nedukabta</title>
         </Helmet>
-        <div className="pt-20 pl-24 w-11/12 h-full">
+        <div className="pt-3 sm:pt-6 xl:pt-10 pl-10 xl:pl-16 2xl:pt-20 2xl:pl-24 w-11/12 h-full">
           <h1
-            className="text-4xl font-bold"
+            className="text-3xl lg:text-4xl font-bold"
             style={{
               color: "#023E8A",
             }}
@@ -23,7 +23,7 @@ class About extends React.Component {
             About us
           </h1>
           <p
-            className="text-lg font-bold text-justify"
+            className="text-base lg:text-lg font-bold text-justify"
             style={{
               color: "#1969CE",
             }}
@@ -42,7 +42,7 @@ class About extends React.Component {
             Gravida at massa nulla et odio magna. Hac quisque ut nisl semper
             nulla.
           </p>
-          <div className="pt-10 h-4/6">
+          <div className="sm:h-1/5 md:h-3/6 pt-10 2xl:h-4/6 hidden lg:block">
             <div className="inline-block w-4/12 h-full bg-gray-600">
               <img
                 src={Image1.default}

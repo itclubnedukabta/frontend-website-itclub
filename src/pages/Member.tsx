@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Container from "../components/Container";
 import MemberCard from "../components/MemberCard";
 
@@ -22,7 +23,7 @@ class Member extends React.Component<
 
   componentDidMount() {
     let temp = [];
-    for (let i = 1; i <= 39; i++) {
+    for (let i = 1; i <= 24; i++) {
       temp.push(i);
     }
     this.setState({
@@ -32,6 +33,9 @@ class Member extends React.Component<
   render() {
     return (
       <Container>
+        <Helmet>
+          <title>Members | IT Club Nedukabta</title>
+        </Helmet>
         <div className="p-10 w-full h-full">
           <div
             className="w-full h-full p-16 flex flex-col relative"
@@ -50,7 +54,7 @@ class Member extends React.Component<
               ))}
             </div>
             <a
-              href="#home"
+              href="#members"
               className="self-center font-normal absolute bottom-5"
               style={{
                 color: "#CAF0F8",

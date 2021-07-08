@@ -1,12 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Container from "../components/Container";
 import "../Tailwind.css";
 
 class Home extends React.Component {
   render() {
     return (
-      <div
-        className="h-screen w-screen pt-3 sm:pt-0 pl-0 sm:pl-16 flex flex-col justify-center"
+      <Container
+        className="flex flex-col justify-center"
         style={{
           backgroundImage: "linear-gradient(to right, #01B1D6, #0178B7)",
         }}
@@ -14,17 +15,17 @@ class Home extends React.Component {
         <Helmet>
           <title>Home | IT Club Nedukabta</title>
         </Helmet>
-        <div className="pl-20">
-          <h1 className="text-8xl font-bold" style={{ color: "#ADE8F4" }}>
+        <div className="pl-10 lg:pl-20">
+          <h1 className="text-6xl lg:text-8xl font-bold" style={{ color: "#ADE8F4" }}>
             IT Club
             <br />
             Nedukabta
           </h1>
-          <p className="font-normal text-4xl" style={{ color: "#CAF0F8" }}>
+          <p className="text-xl font-normal lg:text-4xl" style={{ color: "#CAF0F8" }}>
             An IT extracurricular at SMKN 2 Kab. Tangerang
           </p>
         </div>
-      </div>
+      </Container>
     );
   }
 }

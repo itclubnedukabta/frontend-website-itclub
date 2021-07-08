@@ -13,7 +13,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav
-        className="z-50 lg:h-screen md:h-16 lg:py-12 lg:fixed sm:flex sm:items-center lg:px-0 lg:w-16 sm:justify-between lg:flex-col sm:px-8 md:px-16"
+        className="z-50 pt-3 sm:pt-0 w-screen lg:h-screen md:h-16 lg:py-12 fixed sm:flex sm:items-center lg:px-0 lg:w-16 sm:justify-between lg:flex-col sm:px-8 md:px-16"
         style={{
           backgroundImage: "linear-gradient(to right, #2F98C4, #1666A4)",
         }}

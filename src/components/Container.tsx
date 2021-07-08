@@ -9,7 +9,7 @@ interface ContainerPropsInterface {
 const Container = (props: ContainerPropsInterface) => {
   return (
     <div
-      className={`h-screen w-screen pt-3 sm:pt-0 pl-0 sm:pl-16${
+      className={`h-screen lg:h-screen lg:w-screen lg:pt-3 pt-36 pl-0 lg:pl-16${
         props.className ? " " + props.className : ""
       }`}
       style={props.style}
