@@ -1,5 +1,4 @@
-import * as React from "react";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export interface NavBtnPropsInterface {
   location?: string;
   className?: string;
@@ -7,11 +6,14 @@ export interface NavBtnPropsInterface {
 }
 
 const NavBtn = (props: NavBtnPropsInterface) => {
-  return(
-    <a href={props.location? props.location : "#"} className={props.className? props.className : ""}>
+  return (
+    <Link
+      to={props.location ? props.location : "#"}
+      className={props.className ? props.className : ""}
+    >
       {props.children}
-    </a>
-  )
-}
+    </Link>
+  );
+};
 
 export default NavBtn;
