@@ -28,19 +28,18 @@ class About extends React.Component {
               color: "#1969CE",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ut
-            vestibulum vel nunc, sed est quis. Quis semper luctus pellentesque
-            gravida erat enim. Nunc, blandit nunc, commodo, adipiscing
-            pellentesque ut enim ac purus. Habitasse quam montes, at pulvinar
-            pellentesque. Phasellus cursus lorem magnis in. Gravida et ultrices
-            lacus lorem amet urna. Ultricies hac sagittis et et quisque tortor,
-            arcu, aliquam. Aliquet in amet viverra id at id. Enim sed et
-            tincidunt risus purus. Arcu id congue sem velit ante sed ut. Lectus
-            consequat integer tincidunt tincidunt tempor. Iaculis interdum donec
-            tortor orci. Ipsum pretium gravida urna porta pharetra semper nibh.
-            Porta at morbi sit aenean maecenas donec morbi mauris gravida.
-            Gravida at massa nulla et odio magna. Hac quisque ut nisl semper
-            nulla.
+            IT Club Nedukabta adalah sebuah organisasi dan ekskul yang berada di
+            SMKN 2 Kab. Tangerang. Sebelum IT Club menjadi organisasi dan ekskul
+            resmi di SMKN 2 Kab. Tangerang. Jurusan TKJ(Teknik Komputer dan
+            Jaringan) memiliki organisasi internal jurusan yang bernama
+            CNEC(Computer and Network Enginering Comunity), organisasi ini
+            bersifat tertutup hanya murid dari jurusan TKJ saja yang dapat masuk
+            ke organisasi CNEC ini. Atas permintaan sekolah untuk membuka
+            organisasi CNEC secara umum agar semua jurusan dapat gabung dan
+            belajar teknologi dalam satu organisasi, akhirnya CNEC memutuskan
+            untuk membuat organisasi baru yang dinamakan IT Club agar murid dari
+            jurusan segala jurusan dapat ikut bergabung dan belajar teknologi
+            bersama
           </p>
           <div className="sm:h-1/5 md:h-3/6 pt-10 2xl:h-4/6 hidden lg:block">
             <div className="inline-block w-4/12 h-full bg-gray-600">

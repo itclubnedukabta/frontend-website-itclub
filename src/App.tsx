@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Division from "./pages/Division";
 import Member from "./pages/Member";
+import ContactUS from "./pages/ContactUS";
 class App extends React.Component {
   render() {
     return (
@@ -23,7 +24,9 @@ class App extends React.Component {
           <Route exact path="/members">
             <Member />
           </Route>
-          <Route exact path="/contact"></Route>
+          <Route exact path="/contact">
+            <ContactUS />
+          </Route>
         </Switch>
       </Router>
     );
