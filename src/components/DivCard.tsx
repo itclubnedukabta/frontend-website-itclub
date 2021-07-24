@@ -12,7 +12,7 @@ const DivCard = (props: DivCardPropsInterface) => {
         src={props.image}
         alt=""
         loading="lazy"
-        className="self-center w-full md:w-10/12"
+        className="self-center w-full md:w-10/12 lg:w-10/12 xl:w-8/12 2xl:w-7/12"
       />
       <p className="font-bold text-base text-center">{props.name}</p>
     </div>

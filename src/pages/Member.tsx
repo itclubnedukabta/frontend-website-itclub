@@ -6,8 +6,14 @@ import MemberCard from "../components/MemberCard";
 import "../Tailwind.css";
 
 interface MemberPropsInterface {}
+
+interface ScreenSize {
+  width: number;
+  height: number;
+}
 interface MemberStateInterface {
   members: Array<Number>;
+  screen: ScreenSize;
 }
 
 class Member extends React.Component<
@@ -18,17 +24,50 @@ class Member extends React.Component<
     super(props);
     this.state = {
       members: [],
+      screen: {
+        width: 0,
+        height: 0,
+      },
     };
   }
 
-  componentDidMount() {
+  updateDimensions = async () => {
+    await this.setState({
+      screen: {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      },
+    });
+    this.createDummyData();
+  };
+
+  createDummyData = () => {
     let temp = [];
-    for (let i = 1; i <= 24; i++) {
+    let dummyData =
+      this.state.screen.width > 1280
+        ? 24
+        : this.state.screen.width > 1024
+        ? 15
+        : this.state.screen.width > 768
+        ? 11
+        : this.state.screen.width > 640
+        ? 9
+        : 3;
+    for (let i = 1; i <= dummyData; i++) {
       temp.push(i);
     }
     this.setState({
       members: [...temp],
     });
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+    this.updateDimensions();
   }
   render() {
     return (
@@ -38,12 +77,12 @@ class Member extends React.Component<
         </Helmet>
         <div className="p-10 w-full h-full">
           <div
-            className="w-full h-full p-16 flex flex-col relative"
+            className="w-full h-full p-10 sm:p-16 flex flex-col relative"
             style={{
               backgroundColor: "#0077B6",
             }}
           >
-            <div className="grid grid-cols-5 h-full">
+            <div className="flex flex-col justify-center sm:justify-start sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 h-full">
               <MemberCard
                 nama="Alfat Ardiansa"
                 jabatan="Ketua Divisi"

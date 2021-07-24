@@ -9,8 +9,11 @@ interface MemberCardPropsInterface {
 
 const MemberCard = (props: MemberCardPropsInterface) => {
   return (
-    <a href={props.memberURL ? props.memberURL : "#"} className="py-1 flex">
-      <div className="w-20 h-20 bg-gray-200 rounded-full">
+    <a
+      href={props.memberURL ? props.memberURL : "#"}
+      className="py-1 flex items-center justify-center sm:justify-start"
+    >
+      <div className="bg-gray-200 rounded-full w-20 h-20">
         <img src={props.imageURL ? props.imageURL : ""} alt="" />
       </div>
       <div className="pl-4">
